@@ -1,0 +1,103 @@
+:root{
+      --bg: #ffffff;
+      --text: #111111;
+      --muted: #6b7280;
+      --card: #f7f7f7;
+      --border: #e5e7eb;
+      --accent: #3b82f6;
+      --shadow: 0 10px 20px rgba(0,0,0,.08);
+      --bgbtn:#00D100;
+}
+
+
+    :root[mode="dark"] {
+      --bg: #0b1220;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --card: #0f172a;
+      --border: #1f2937;
+      --accent: #60a5fa;
+      --shadow: 0 10px 20px rgba(0,0,0,.35);
+      --bgbtn:#92f792;
+
+    }
+
+    
+    :root[mode="light"] {
+      --bg: #ffffff;
+      --text: #111111;
+      --muted: #6b7280;
+      --card: #f7f7f7;
+      --border: #e5e7eb;
+      --accent: #3b82f6;
+      --shadow: 0 10px 20px rgba(0,0,0,.08);
+      --bgbtn:#00D100;
+
+    }
+
+    *{
+        padding: 0;
+        margin: 0;
+         
+    }
+.main{
+    background-color: var(--bg);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+/*.box{
+    background-color: var(--card);
+    height: 300px;
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    border: var(--border);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mode{
+    padding: 5px 10px;
+    background-color: var(--bgbtn);
+    border-radius: 10px;
+}  */
+
+
+.box {
+    background-color: var(--card);
+    height: 300px;
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    border: var(--border);
+    display: flex;
+    flex-direction: column;   /* Stack children vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center;     /* Center horizontally */
+    gap: 20px;               /* Space between button and paragraph */
+}
+
+.mode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: var(--bgbtn);
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.textContent {
+    text-align: center;
+    color: var(--text);
+    display: block;
+    max-width: 90%;
+}
